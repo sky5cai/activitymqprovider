@@ -11,6 +11,7 @@ public class Consumer {
     @JmsListener(destination="springboot.queue")
     public void ListenQueue(String msg){
         System.out.println("接收到queue消息：" + msg);
+        System.out.println("oooo");
     }
 
     //接收topic类型消息
